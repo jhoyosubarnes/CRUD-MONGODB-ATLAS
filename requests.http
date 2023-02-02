@@ -1,0 +1,32 @@
+###
+
+POST http://localhost:9000/api/datosPersonales HTTP/1.1
+Content-Type: application/json 
+
+{
+  "nombre": "Jose",
+  "apellido" : "Ubarnes",
+  "edad": "25"
+}
+
+###
+GET http://localhost:9000/api/datosPersonales HTTP/1.1
+
+###
+
+GET http://localhost:9000/api/datosPersonales/63daf1fdf745043718f3aec5 HTTP/1.1
+
+###
+
+PUT http://localhost:9000/api/datosPersonales/63db490f418affda91986935 HTTP/1.1
+Content-Type: application/json 
+
+{
+  "nombre": "Jose",
+  "apellido" : "Ubarnes",
+  "edad": "24"
+}
+
+###
+
+DELETE http://localhost:9000/api/datosPersonales/63db490f418affda91986935 HTTP/1.1
